@@ -1,21 +1,15 @@
 
 
-brightness_5
-// A C++ program for Prim's Minimum  
-// Spanning Tree (MST) algorithm. The program is  
-// for adjacency matrix representation of the graph  
+
 #include <bits/stdc++.h> 
 using namespace std; 
   
-// Number of vertices in the graph  
+
 #define V 5  
   
-// A utility function to find the vertex with  
-// minimum key value, from the set of vertices  
-// not yet included in MST  
 int minKey(int key[], bool mstSet[])  
 {  
-    // Initialize min value  
+   
     int min = INT_MAX, min_index;  
   
     for (int v = 0; v < V; v++)  
@@ -25,18 +19,14 @@ int minKey(int key[], bool mstSet[])
     return min_index;  
 }  
   
-// A utility function to print the  
-// constructed MST stored in parent[]  
+ 
 void printMST(int parent[], int graph[V][V])  
 {  
     cout<<"Edge \tWeight\n";  
     for (int i = 1; i < V; i++)  
         cout<<parent[i]<<" - "<<i<<" \t"<<graph[i][parent[i]]<<" \n";  
 }  
-  
-// Function to construct and print MST for  
-// a graph represented using adjacency  
-// matrix representation  
+
 void primMST(int graph[V][V])  
 {  
    
