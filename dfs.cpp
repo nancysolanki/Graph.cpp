@@ -1,9 +1,5 @@
 
-_none
-edit
-play_arrow
 
-brightness_4
 // C++ program to print DFS
 // traversal for a given given
 // graph
